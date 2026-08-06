@@ -1,4 +1,3 @@
-import Dashboard from "@/components/ui/Dashboard";
 import { redirect } from "next/navigation";
 
 

@@ -3,7 +3,6 @@
 import LatestOrderItem from "@/components/order/LatestOrderItem";
 import Logo from "@/components/ui/Logo";
 import prisma from "@/lib/prisma";
-import { OrderWithProducts } from "@/src/types";
 //import useSWR from 'swr'
 
 async function getReadyOrders(){

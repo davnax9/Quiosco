@@ -15,7 +15,7 @@ type LatestOrderItemProps = {
 export default function LatestOrderItem({order}: LatestOrderItemProps) {
 
   const [isOpen, setIsOpen] = useState(false)
-  const [paymentMethod, setPaymentMethod] = useState("")
+//   const [paymentMethod, setPaymentMethod] = useState("")
 
   const handlePaid = async(paymentMethod: string) => {
     const result = await paidOrder(order.id, paymentMethod)

@@ -14,7 +14,7 @@ export default function ImageUpload({image}: {image: string | undefined}) {
     <CldUploadWidget uploadPreset="quiosco" options={{ maxFiles: 1 }} onSuccess={(result, {widget}) => {
         if(result.event === 'success'){
             widget.close()
-            // @ts-ignore
+            //@ts-ignore
             setImageUrl(result.info?.secure_url)
         }
     }}>

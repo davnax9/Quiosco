@@ -1,7 +1,6 @@
 import prisma from "@/lib/prisma"
 import ImageUpload from "./ImageUpload"
 import { Product } from "@/src/generated/prisma/client"
-import { formatCurrency } from "@/src/utils"
 
 async function getCategories(){
     return await prisma.category.findMany()
