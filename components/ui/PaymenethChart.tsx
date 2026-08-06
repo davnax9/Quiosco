@@ -49,7 +49,8 @@ export default function PaymentChart({ data, tipo }: Props) {
 
                 </Pie>
 
-                <Tooltip formatter={(value: number) => formatCurrency(value)}/>
+                {/* <Tooltip formatter={(value: number) => formatCurrency(value)}/> */}
+                <Tooltip formatter={(value) => formatCurrency(Number(value))}/>
 
                 <Legend />
 
